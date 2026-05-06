@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <main>
-      {/* ----------------- Hero Section ----------------- */}
+
       <section className="hero">
         <div className="hero-inner">
           <p className="hero-eyebrow">Oceanside, CA</p>
@@ -12,8 +12,8 @@ function Home() {
           </h1>
           <p className="hero-sub">
             CIS student at CSUSM, beach volleyball coach, and founder of
-            <strong> 760 Beach Volleyball</strong>. I like building things — on a
-            computer, on the sand, or in a shop.
+            <strong> 760 Beach Volleyball</strong>. I like managing things on a
+            computer, on the sand, or in a coffee shop.
           </p>
           <div className="hero-cta">
             <a href="#projects" className="btn btn-primary">See my work</a>
@@ -22,10 +22,10 @@ function Home() {
         </div>
       </section>
 
-      {/* ----------------- About Section ----------------- */}
+
       <section id="about" className="section">
         <div className="section-head">
-          <span className="section-tag">01 — About</span>
+          <span className="section-tag">About</span>
           <h2>A little about me</h2>
         </div>
 
@@ -34,17 +34,17 @@ function Home() {
             <p>
               I'm a Computer Information Systems student at
               <strong> California State University San Marcos</strong>, graduating
-              May 2027. Before transferring to CSUSM I earned my CIS Associate's
+              May 2027. Before transferring to CSUSM I earned my Associate's
               degree from Palomar College with a 4.0 GPA and a spot on the men's
-              indoor volleyball team as captain.
+              indoor volleyball team as a captain and all conference nod.
             </p>
             <p>
               Outside of class I coach at <strong>Tamarack Beach Volleyball Club</strong>,
               run <strong>760 Beach Volleyball</strong> (a small tournament series
-              I founded in summer 2025), and pull shifts as a supervisor at
-              Vigilante Coffee. I'm most interested in the intersection of code,
-              community, and good design — tools that actually help people run
-              real things.
+              I founded in summer 2025), and work as a supervisor at 
+              <strong>Vigilante Coffee in South Oceanside</strong>. I'm most interested in project management
+              which is why I chose CIS to find a good balance between CS and Business and 
+              allow me to have a broad future proof background.
             </p>
           </div>
 
@@ -63,17 +63,17 @@ function Home() {
             </li>
             <li>
               <span className="fact-label">Interests</span>
-              <span className="fact-value">Web dev · Cyber security · Volleyball</span>
+              <span className="fact-value">Beach Volleyball · Cyber Security · Event Running</span>
             </li>
           </ul>
         </div>
       </section>
 
-      {/* ----------------- Projects Section ----------------- */}
+
       <section id="projects" className="section section-alt">
         <div className="section-head">
-          <span className="section-tag">02 — Projects</span>
-          <h2>Selected work</h2>
+          <span className="section-tag">Projects</span>
+          <h2>Selected Work</h2>
           <p className="section-sub">
             A mix of class projects, side projects, and things I've built for my
             own business.
@@ -85,8 +85,8 @@ function Home() {
             number="01"
             title="This Portfolio"
             tag="React · Vite · GitHub Pages"
-            desc="The site you're on. Built from scratch in React with client-side routing via react-router-dom, custom CSS (no UI library), a responsive layout, and automated deploys to GitHub Pages via the gh-pages package."
-            tech={['React', 'Vite', 'React Router', 'CSS']}
+            desc="The site you're currently on. Built from scratch as part of a CS 444 Web Development project."
+            tech={['React', 'Vite', 'Web Dev', 'CSS']}
             link="https://github.com/Thelampstand/my-portfolio"
           />
 
@@ -94,27 +94,33 @@ function Home() {
             number="02"
             title="760 Beach Volleyball"
             tag="Small business · Event ops"
-            desc="Founded and run a beach volleyball tournament series in Carlsbad. I handle court permits, the signup system, sponsor outreach, social marketing, and day-of event operations. Currently prototyping a web-based signup + bracket tool to replace the spreadsheet workflow."
-            tech={['Ops', 'Marketing', 'Sponsorship', 'Signup UX']}
-            link="https://www.instagram.com/760beachvolleyball/"
+            desc="Founded and running beach volleyball tournaments in Carlsbad. 
+            I handle court permits through the city, the signup system, sponsor outreach, 
+            limited social marketing, and all day-of event operations. 
+            Currently working on a app that will help to simplify discovery and signups."
+            tech={['Event Ops', 'Marketing', 'Sponsorship']}
+            link="https://www.instagram.com/760_beach/"
           />
 
           <ProjectCard
             number="03"
-            title="Node + Express API (CIS 444)"
-            tag="Node.js · Express · REST"
-            desc="A class project exploring server-side JavaScript: a small REST API built with Express that exposes routes for reading and writing JSON resources, uses middleware for JSON parsing and logging, and serves a static frontend from the same origin to avoid CORS headaches."
-            tech={['Node.js', 'Express', 'REST', 'Middleware']}
+            title="Court Connect"
+            tag="Java · Software Managment"
+            desc="A class project for CS 370 that stemmed from my original idea
+             of wanting to make it easier for people to play sports togther. This 
+             app allows users to signup or create public sports events to connect easier on a busy schedule.
+             Will become a mobile app over the summer!"
+            tech={['Agile', 'Java', 'SQL']}
             link="#"
           />
         </div>
       </section>
 
-      {/* ----------------- Experience Section ----------------- */}
+
       <section id="experience" className="section">
         <div className="section-head">
-          <span className="section-tag">03 — Experience</span>
-          <h2>What I've been up to</h2>
+          <span className="section-tag">Experience</span>
+          <h2>What makes up my past</h2>
         </div>
 
         <ol className="timeline">
@@ -161,16 +167,14 @@ function Home() {
         </ol>
       </section>
 
-      {/* ----------------- Contact Section ----------------- */}
+
       <section id="contact" className="section section-alt">
         <div className="contact-card">
           <div>
             <span className="section-tag">04 — Contact</span>
             <h2>Let's build something.</h2>
             <p className="contact-copy">
-              Open to internships, freelance, and collaborations — especially
-              anything that mixes web dev with sports, events, or local
-              community. I reply fast.
+              Open to internships, learning new skills, private lessons or anything between.
             </p>
           </div>
           <div className="contact-links">
